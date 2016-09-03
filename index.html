@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script src="ui-components/webcomponentsjs/webcomponents.js"></script>
+	<link rel="import" href="ui-components/polymer.html" />
+	<link rel="import" href="ui-components/imports.html" />
+	<link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+	<polymer-element name="scene-switcher">
+		<template>
+			<link rel="stylesheet" href="./css/scene_switcher.css" /> 
+			<div id="windowContainer">
+				<div id="windowHeader">
+						<span id="indicator">INACTIVE</span>
+						<xui-button id="toggleRun" on-click="{{ toggleSwitcher }}">Start</xui-button>
+				</div>
+				<div id="windowContent">
+					<div id="wrap"><div style="width:30%">In Game:</div><div style="width:70%"><xui-select id="inGame"optionlist="{{ optionlist }}"></xui-elect></div></div>
+                    <div id="wrap"><div style="width:30%">Out of Game:</div><div style="width:70%"><xui-select id="outGame"  optionlist="{{ optionlist }}"></xui-select></div></div>
+                    <br><strong>If SC2 is running on a different PC:</strong>
+                    <br>
+                    <div id="wrap" style="margin-top:5px"><div style="width:30%">SC2 PC IP: </div><div style="width:70%"><input type="text" id="ip" value="localhost" style=""></input></div></div>
+                    Note: You need to go into the Battle.net launcher, click Options, Game Settings, check 'Additional command line arguments' and put <br><strong>-clientapi 6119</strong> into the textbox. 
+                </div>
+			</div>
+		</template>
+		<script src="./js/xjs.js"></script>
+		<script src="./js/scene_switcher.js"></script>
+	</polymer-element>
+	<div id="container">
+		<scene-switcher></scene-switcher>
+	</div>
+</body>
+</html>
