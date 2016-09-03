@@ -3,7 +3,7 @@ Usage: In XSplit, click Extensions -> Add Custom Extension, and add `http://reap
 
 You can also host the switcher yourself by downloading this git repo and adding the `index.html` file as the extension. 
 
-#### If you use a seperate PC to stream: 
+#### If you use a separate PC to stream: 
 Enter the IP address of your SC2 computer in the SC2 PC IP box.
 On your SC2 PC, open the Battle.net launcher, click Options, Game Settings, and under SC2, check 'Additional Command Line Arguments', and enter `-clientapi 6119` into the text box. 
 
