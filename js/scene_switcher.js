@@ -138,7 +138,9 @@
           Extension.loadConfig().then(function(config) {
             outGame.value = config.outGame;
             inGame.value = config.inGame;
-            _this.$.ip.value = config.ip;
+            if(config.ip!==undefined) {
+                _this.$.ip.value = config.ip;
+            }
           });
         });
       },
