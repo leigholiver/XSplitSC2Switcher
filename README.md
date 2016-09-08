@@ -1,6 +1,8 @@
 ## SC2 Scene Switcher plugin for XSplit
 Usage: In XSplit, click Extensions -> Add Custom Extension, and add `http://reapergg.xyz/SC2Switcher`. Click Extensions again, then click on `http://reapergg.xyz/SC2Switcher` to open it. 
 
+After setting your scenes and starting the plugin, you have to leave the extension window open for the plugin to work. 
+
 You can also host the switcher yourself by downloading this git repo and adding the `index.html` file as the extension. 
 
 #### If you use a separate PC to stream: 
